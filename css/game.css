@@ -1,0 +1,150 @@
+#loader {
+    width: 100px;
+    height: 100px;
+    border: 7px solid #659dbd;
+    border-bottom-color: transparent;
+    border-top-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    animation: rotation 1.5s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  } 
+}
+
+#container {
+    display: none;
+    width: 700px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.header div {
+    display: flex;
+    align-items: center;
+}
+
+.header p {
+    color: #659dbd;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: nor;
+}
+
+.header span {
+    display: inline-block;
+    background-color: #fbeec1;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #659dbd;
+    border-radius: 4px;
+}
+
+#question-box {
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    background-color: #659dbd;
+    color: #fbeec1;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 60px 0 30px;
+    font-family: nor;
+}
+
+.answer-text {
+    color: #659dbd;
+    background-color: #fbeec1;
+    border: none;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border-radius: 15px;
+    text-align: left;
+    cursor: pointer;
+    border: 2px solid #659dbd;
+    transition: all 0.2s ease-in;
+    font-family: nor;
+}
+
+.answer-text:hover {
+    color: #fbeec1;
+    background-color: #659dbd;
+    border: 2px solid #fbeec1;
+}
+
+
+#next-button,
+#finish-button {
+    color: #659dbd;
+    font-size: 1rem;
+    background-color: #fbeec1;
+    border: 2px solid #659dbd;
+    border-radius: 15px;
+    padding: 8px 15px;
+    margin: 20px 20px 0 0;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+    font-family: nor;
+}
+
+#next-button:hover,
+#finish-button:hover {
+    background-color: #659dbd;
+    color: #fbeec1;
+}
+
+.correct {
+    background-color: #10b462;
+    color: black;
+}
+
+.incorrect {
+    background-color: #c93b3b;
+    color: black;
+}
+
+.correct:hover {
+    background-color: #10b462;
+    color: black;
+}
+
+.incorrect:hover {
+    background-color: #c93b3b;
+    color: black;
+}
+
+#error{
+    display: none;
+}
+
+
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+    p {
+        font-size: 20px;
+    }
+    #question-text {
+        font-size: 20px;
+    }
+    #question-box {
+        width: 200px;
+    }
+}
